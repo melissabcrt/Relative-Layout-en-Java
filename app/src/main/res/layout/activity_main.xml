@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spProgramas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/programas"
+        />
+
+    <EditText
+        android:id="@+id/etCanal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tvCanal"
+        android:layout_alignTop="@id/bnCanal"
+        android:layout_alignBottom="@id/bnCanal"
+        android:layout_toStartOf="@id/bnCanal" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bnCanal"
+        android:background="@drawable/redondo"
+        android:text="Cambiar"
+        android:layout_above="@+id/tvCanal"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvCanal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/sintonizanos_la_proxima_semana"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLegendCanal"
+        android:text="Canal 5"
+        android:layout_below="@id/tvCanal"
+        android:layout_centerInParent="true"
+        android:textSize="32sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/ivCont"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/tbc2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+
+
+</RelativeLayout>
